@@ -1,0 +1,106 @@
+body {
+    font-family: 'Poppins';
+    
+    background:rgb(243, 244, 245)
+
+}
+.cabecalho { 
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: rgb(83, 79, 79);
+}
+
+.cabecalho .logo {
+    width: 65px;
+}
+
+.cabecalho .menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho nav li a {
+    /* font-weight: bold; */
+    color: black;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+    width: 0 10px;
+}
+
+.cabecalho nav li a:hover {
+    background-color: #b5cc81;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 132px);
+    padding: 0 30px 30px;
+}
+
+.container .imagem-titulo {
+    max-width: 500px;
+}
+
+.container .descricao {
+    color: #a8adb7;
+    width: 85%;
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+
+.container .botao-trailer:hover {
+    transform: scale(1.1)
+}
+
+.fundo-tela {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: black ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
