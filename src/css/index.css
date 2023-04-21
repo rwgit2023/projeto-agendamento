@@ -1,7 +1,8 @@
 body {
     font-family: 'Poppins';
     
-    background:rgb(243, 244, 245)
+    background:rgb(243, 244, 245);
+    
 
 }
 .cabecalho { 
@@ -59,22 +60,18 @@ body {
 }
 
 
-.container .botao-trailer:hover {
-    transform: scale(1.1)
+footer{
+    text-align: center;
+    background: url(../midia/image/bg.jpg);
+    padding: 40px 0;
 }
 
-.fundo-tela {
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    background-color: black ;
+.rodape{
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 20px;
+
 }
-
-
 
 
 
