@@ -46,7 +46,8 @@ body {
 }
 
 .cabecalho nav li a:hover {
-    background-color: #b5cc81;
+    background-color: #1C97C4;
+    color: #ffffff;
 }
 
 .container {
