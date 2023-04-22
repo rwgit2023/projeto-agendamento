@@ -83,7 +83,7 @@ body {
 
 .right{
   /* border: 1px solid red; */
-  padding: 2%;
+  padding: 1%;
   width: 50%;
   height: 100%;
   position: relative;  
@@ -179,61 +179,52 @@ body {
   
   .today {
     /* background-color: #b5cc81;; */
-    background-color: rgb(67, 97, 124);
+    background-color: #1C97C4;
     border-radius: 5px;
   }
 
   /* ------------------------------------------------------------------- */
+form label, form p, fieldset{
+    display: block;
+    color: #48484f;
+    font-size: 25px;
+    margin: 0 0;
+    text-align: left;
+    
+}
+.input-padrao{
+    display: block;
+    /* margin: 0 30px 20px 50px;    */
+    padding: 15px 25px; 
+    width: 50%;
+    border-radius: 5px;
+}
 
-   section{
-    box-sizing: border-box;
+
+
+.container .enviar{
+    margin: 10px 0 0 -500px;
+    width: 20%;
+    padding: 15px 0;
+    background-color: #1C97C4;
+    color: #48484f;
+    font-weight: bold;
+    font-size: 18px;
     border: none;
-    width: 12%;
-    height: 100%;
-    /* background: linear-gradient(#888888, black); */
-    background: #abb8c3;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
     
+}
+
+.container .enviar:hover{
     
-    
-} 
+    transform: scale(1.2);
+    background-color: #1C97C4;
+    color: #ffffff;
 
-
-
-
-.navigation li{
-  font-size: 20px;
-  padding: 30px 50px;
-  
 }
 
-
-
-.navigation li a{
-  font-weight: bold;
-  color: #ffffff;
-  border-radius: 50px;
-  
-}
-
-.navigation li a:hover{
-  color: yellow;
-  transition: 1s;
-  
-  
-}
-
-
-.fim{
-  color:rgb(124, 28, 28);
-  position: relative;
-  margin: 400px 0 0 50px;
-  font-size: 25px;
-  
-}
-.fim:hover{
-  font-size: 30px;
-  transition: 1s;
-}
 
 
   /* ------------------------------------------------------------- */

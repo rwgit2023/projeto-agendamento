@@ -43,8 +43,6 @@ body {
 .cabecalho nav li a {
   font-weight: bold;
   /* color: #ffffff; */
-
-
   color:#343a40 ;
   font-size: 20px;
   padding: 5px 20px;
@@ -70,25 +68,7 @@ flex-direction: row;
   display: flex;
 }
 
-.left{
-/* border: px solid red; */
-padding: 2%;
-width: 50%;
-height: 100%;
-position: relative;  
-display: flex;
-justify-content: center;
-align-items: center;
-}
 
-.right{
-/* border: 1px solid red; */
-padding: 2%;
-width: 50%;
-height: 100%;
-position: relative;  
-text-align: center; 
-}
 /* ------------------------------------------------------------- */
 
 footer{

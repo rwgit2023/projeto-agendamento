@@ -36,7 +36,8 @@
 				<ul class="menu">
 					<!-- <li><a href="./novaReuniao.html"> + Nova reunião</a></li> -->
 					<li><a href="./ingressar.html">Ingressar</a></li>
-                    <li><a href="./ingressar.html">Histórico</a></li>
+                    <li><a href="./Historico.html">Histórico</a></li>
+					<li><a href="./sobre.html">Sobre</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -74,14 +75,30 @@
 			  </div>
 
 			  <div class="right">
-				<h1>INFORMAÇÕES DA REUNIÃO</h1>
-				<P>texto</P>
-				<P>texto</P>
-				<P>texto</P>
-				<P>texto</P>
+				
+				<form >
+					<label for="titulo">Título reunião</label>
+					<input type="text" id="titulo" class="input-padrao" required placeholder="Adicionar um assunto">
+	
+					<label for="local">Local</label>
+					<input type="text" id="local" class="input-padrao" required placeholder="Local">
 
-			  </div>
-		  
+					<label for="data">Data e hora</label>
+					<input type="datetime-local" id="data" class="input-padrao">
+
+					<label for="livre">Observações</label>
+                	<textarea id ="Mensagem" cols=" " rows="4" class="input-padrao" required
+					placeholder="Observações"></textarea>
+
+					<label for="email">Email dos envolvidos</label>
+					<input type="text" id="email" class="input-padrao"
+					required placeholder="envolvido1@; envolvido2@" >
+					
+
+					
+					<button class="enviar" type="submit">Agendar</button>
+				</form>
+	
 
 
 		</main>
