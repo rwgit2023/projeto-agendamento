@@ -109,15 +109,19 @@ section{
 
 
   /* ------------------------------------------------------------- */
-footer{
+  footer{
     text-align: center;
-    background: url(../midia/image/bg.jpg);
+    /* background: url(../midia/image/bg.jpg); */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #343a40;
     padding: 20px 0;
-}
-
-.rodape{
+  }
+  
+  .rodape{
     color: #ffffff;
     font-size: 10px;
     margin-top: 20px;
-
-}
+  
+  }
