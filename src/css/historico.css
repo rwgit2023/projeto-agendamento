@@ -16,7 +16,7 @@ body {
 .cabecalho { 
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 0px;
     max-width: 1440px;
     margin: 0 auto;
     background: rgb(83, 79, 79);
@@ -26,6 +26,7 @@ body {
     width: 30%;
     height: 100%;
     object-fit: contain;
+    margin: 0 0 0 -25px;
 }
 
 .cabecalho .menu{
@@ -62,6 +63,7 @@ section{
     width: 12%;
     height: 100%;
     background: linear-gradient(#888888, black);
+    
     
     
     
