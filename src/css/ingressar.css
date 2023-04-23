@@ -56,18 +56,26 @@ body {
   color: #ffffff;
 }
 
-.main{  
-flex-direction: row;
+
+/* ------------------------------------------------------------- */
+
+
+form label, form p, fieldset{
+  /* display: block; */
+  color: #48484f;
+  font-size: 30px;
+  margin: 200px 0 0 500px;
+  
+  
 }
 
-.container {  
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  color: black;
-  display: flex;
+.input-padrao{
+  display: block;
+  /* margin: 0 30px 20px 50px;    */
+  padding: 15px 25px; 
+  width: 40%;
+  border-radius: 5px;
 }
-
 
 /* ------------------------------------------------------------- */
 

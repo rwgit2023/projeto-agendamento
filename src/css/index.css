@@ -88,6 +88,8 @@ body {
   height: 100%;
   position: relative;  
   text-align: center; 
+  
+  
 }
 
 /* ------------------------------------------------------------- */
@@ -196,7 +198,7 @@ form label, form p, fieldset{
     display: block;
     /* margin: 0 30px 20px 50px;    */
     padding: 15px 25px; 
-    width: 50%;
+    width: 72%;
     border-radius: 5px;
 }
 
