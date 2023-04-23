@@ -1,10 +1,7 @@
-const meuInput = document.getElementById("meuInput");
-const meuBotao = document.getElementById("meuBotao");
+const inputField = document.getElementById('input-field');
+const btnSend = document.getElementById('btn-send');
 
-meuInput.addEventListener("input", function() {
-  if (meuInput.value.length >= 5) {
-    meuBotao.style.display = "block";
-  } else {
-    meuBotao.style.display = "none";
-  }
+btnSend.addEventListener('click', () => {
+  const value = inputField.value;
+  
 });
