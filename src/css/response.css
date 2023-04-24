@@ -1,6 +1,6 @@
 @media (max-width: 1200px) {
     body {
-       background-color: #f44336;
+        background-color: #f44336;
     }
 
     .fundo-video {
@@ -24,8 +24,7 @@
     .container .descricao {
         color: #ffffff;
         text-align: center;
-    } 
+    }
 
-    
+
 }
-

@@ -1,5 +1,4 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,7 +12,8 @@ html {
 body {
   font-family: 'Poppins';
 }
-.cabecalho { 
+
+.cabecalho {
   display: flex;
   justify-content: space-between;
   padding: 0px;
@@ -22,7 +22,7 @@ body {
   margin: 0 auto;
   /* background: rgb(83, 79, 79); */
   background: #D0D0CB;
-  
+
 }
 
 .cabecalho .logo {
@@ -30,11 +30,11 @@ body {
   height: 100%;
   object-fit: contain;
   margin: 0 0 0 -25px;
-  
-  
+
+
 }
 
-.cabecalho .menu{
+.cabecalho .menu {
   display: flex;
   align-items: center;
   height: 100%;
@@ -43,7 +43,7 @@ body {
 .cabecalho nav li a {
   font-weight: bold;
   /* color: #ffffff; */
-  color:#343a40 ;
+  color: #343a40;
   font-size: 20px;
   padding: 5px 20px;
   border-radius: 50px;
@@ -56,11 +56,11 @@ body {
   color: #ffffff;
 }
 
-.main{  
-flex-direction: row;
+.main {
+  flex-direction: row;
 }
 
-.container {  
+.container {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
@@ -70,14 +70,14 @@ flex-direction: row;
 
 /* ------------------------------------------------------------- */
 
-.histórico{
+.histórico {
   width: 940px;
   margin: 0 auto;
   padding: 50px 0;
   text-align: center;
 }
 
-.histórico li{
+.histórico li {
   display: inline-block;
   text-align: center;
   width: 40%;
@@ -87,41 +87,42 @@ flex-direction: row;
   box-sizing: border-box;
   border: 2px solid black;
   border-radius: 10px;
-  
+
 }
 
-.histórico li:hover{
+.histórico li:hover {
   border-color: darkgoldenrod;
-  
+
 
 }
 
-.histórico li:active{
+.histórico li:active {
 
   border-color: aqua;
 }
 
-.histórico li:hover h2{
+.histórico li:hover h2 {
   font-size: 40px;
 }
 
-.histórico li p{
+.histórico li p {
   font-size: 20px;
 }
 
 
-li h2{
+li h2 {
   color: black;
   font-weight: bold;
   font-size: 30px;
   text-decoration: none;
 }
 
-.descricao{
+.descricao {
   font-size: 18px;
-  
+
 }
-.preco{
+
+.preco {
   text-transform: uppercase;
   color: black;
   font-weight: bold;
@@ -131,7 +132,7 @@ li h2{
 }
 
 
-footer{
+footer {
   text-align: center;
   /* background: url(../midia/image/bg.jpg); */
   position: absolute;
@@ -141,38 +142,9 @@ footer{
   padding: 20px 0;
 }
 
-.rodape{
+.rodape {
   color: #ffffff;
   font-size: 10px;
   margin-top: 20px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

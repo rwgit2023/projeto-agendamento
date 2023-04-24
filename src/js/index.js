@@ -89,10 +89,10 @@ renderCalendar();
 var inputDateTime = document.getElementById("data");
 
 // Validar se a data selecionada é maior do que a data atual
-inputDateTime.addEventListener("change", function() {
+inputDateTime.addEventListener("change", function () {
   var selectedDate = new Date(inputDateTime.value);
   var currentDate = new Date();
-  
+
   if (selectedDate < currentDate) {
     alert("Selecione uma data válida!");
     inputDateTime.value = "";

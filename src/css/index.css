@@ -1,274 +1,249 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
-  }
-
-  html {
-    font-size: 50%;
-  }
-  
-body {
-    font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
 }
-.cabecalho { 
-    display: flex;
-    justify-content: space-between;
-    padding: 0px;
-    max-width: 1440px;
-    /* max-height: 100px; */
-    margin: 0 auto;
-    /* background: rgb(83, 79, 79); */
-    background: #D0D0CB;
-    
+
+html {
+  font-size: 50%;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  max-width: 1440px;
+  /* max-height: 100px; */
+  margin: 0 auto;
+  /* background: rgb(83, 79, 79); */
+  background: #D0D0CB;
+
 }
 
 .cabecalho .logo {
-    width: 30%;
-    height: 100%;
-    object-fit: contain;
-    margin: 0 0 0 -25px;
-    
-    
+  width: 30%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0 0 0 -25px;
+
+
 }
 
 
-.cabecalho .menu{
-    display: flex;
-    align-items: center;
-    height: 100%;
+.cabecalho .menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .cabecalho nav li a {
-    font-weight: bold;
-    /* color: #ffffff; */
+  font-weight: bold;
+  /* color: #ffffff; */
 
 
-    color:#343a40 ;
-    font-size: 20px;
-    padding: 5px 20px;
-    border-radius: 50px;
-    transition: 0.2s;
-    width: 0 10px;
+  color: #343a40;
+  font-size: 20px;
+  padding: 5px 20px;
+  border-radius: 50px;
+  transition: 0.2s;
+  width: 0 10px;
 }
 
 .cabecalho nav li a:hover {
-    background-color: #1C97C4;
-    color: #ffffff;
+  background-color: #1C97C4;
+  color: #ffffff;
 }
 
-.main{  
+.main {
   flex-direction: row;
 }
 
-.container {  
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    color: black;
-    display: flex;
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  color: black;
+  display: flex;
 }
 
-.left{
+.left {
   /* border: px solid red; */
   padding: 2%;
   width: 50%;
   height: 100%;
-  position: relative;  
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.right{
+.right {
   /* border: 1px solid red; */
   padding: 1%;
   width: 50%;
   height: 100%;
-  position: relative;  
-  text-align: center; 
-  
-  
+  position: relative;
+  text-align: center;
+
+
 }
 
 /* ------------------------------------------------------------- */
 
 .calendar {
-    width: 45rem;
-    height: 52rem;
-    background-color: white;
-    box-shadow: 0 0.5rem 3rem rgba(143, 143, 143, 0.4);
-  }
-  
-  .month {
-    width: 100%;
-    height: 12rem;
-    background: rgb(83, 79, 79);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    text-align: center;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-  }
-  
-  .month i {
-    font-size: 2.5rem;
-    cursor: pointer;
-  }
-  
-  .month h1 {
-    font-size: 3rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .month p {
-    font-size: 1.6rem;
-  }
-  
-  .weekdays {
-    width: 100%;
-    height: 5rem;
-    padding: 0 0.4rem;
-    display: flex;
-    align-items: center;
-  }
-  
-  .weekdays div {
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: 0.1rem;
-    width: calc(44.2rem / 7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0 0.3rem 0.5rem rgba(49, 46, 46, 0.5);
-  }
-  
-  .days {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0.2rem;
-  }
-  
-  .days div {
-    font-size: 1.4rem;
-    margin: 0.3rem;
-    width: calc(40.2rem / 7);
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-    transition: background-color 0.2s;
-  }
-  
-  .days div:hover:not(.today) {
-    background-color: #6b91a0; 
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .prev-date,
-  .next-date {
-    opacity: 0.5;
-  }
-  
-  .today {
-    /* background-color: #b5cc81;; */
-    background-color: #1C97C4;
-    border-radius: 5px;
-  }
-
-  /* ------------------------------------------------------------------- */
-form label, form p, fieldset{
-    display: block;
-    color: #48484f;
-    font-size: 25px;
-    margin: 0 0;
-    text-align: left;
-    
-}
-.input-padrao{
-    display: block;
-    /* margin: 0 30px 20px 50px;    */
-    padding: 15px 25px; 
-    width: 72%;
-    border-radius: 5px;
+  width: 45rem;
+  height: 52rem;
+  background-color: white;
+  box-shadow: 0 0.5rem 3rem rgba(143, 143, 143, 0.4);
 }
 
-
-
-.container .enviar{
-    margin: 10px 0 0 -500px;
-    width: 20%;
-    padding: 15px 0;
-    background-color: #1C97C4;
-    color: #48484f;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 10px;
-    transition: 1s all;
-    cursor: pointer;
-    
+.month {
+  width: 100%;
+  height: 12rem;
+  background: rgb(83, 79, 79);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
-.container .enviar:hover{
-    
-    transform: scale(1.2);
-    background-color: #1C97C4;
-    color: #ffffff;
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
 
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 1.6rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(49, 46, 46, 0.5);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(40.2rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #6b91a0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  /* background-color: #b5cc81;; */
+  background-color: #1C97C4;
+  border-radius: 5px;
+}
+
+/* ------------------------------------------------------------------- */
+form label,
+form p,
+fieldset {
+  display: block;
+  color: #48484f;
+  font-size: 25px;
+  margin: 0 0;
+  text-align: left;
+
+}
+
+.input-padrao {
+  display: block;
+  /* margin: 0 30px 20px 50px;    */
+  padding: 15px 25px;
+  width: 72%;
+  border-radius: 5px;
 }
 
 
 
-  /* ------------------------------------------------------------- */
-footer{
-    text-align: center;
-    /* background: url(../midia/image/bg.jpg); */
-    background: #343a40;
-    padding: 20px 0;
+.container .enviar {
+  margin: 10px 0 0 -500px;
+  width: 20%;
+  padding: 15px 0;
+  background-color: #1C97C4;
+  color: #48484f;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  transition: 1s all;
+  cursor: pointer;
+
 }
 
-.rodape{
-    color: #ffffff;
-    font-size: 10px;
-    margin-top: 20px;
+.container .enviar:hover {
+
+  transform: scale(1.2);
+  background-color: #1C97C4;
+  color: #ffffff;
 
 }
 
 
 
+/* ------------------------------------------------------------- */
+footer {
+  text-align: center;
+  /* background: url(../midia/image/bg.jpg); */
+  background: #343a40;
+  padding: 20px 0;
+}
 
+.rodape {
+  color: #ffffff;
+  font-size: 10px;
+  margin-top: 20px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
