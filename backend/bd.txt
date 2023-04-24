@@ -1,0 +1,17 @@
+-- CREATE DATABASE IF NOT EXISTS projeto-agendamento;
+
+CREATE TABLE IF NOT EXISTS public.reuniao (
+    id SERIAL PRIMARY KEY,
+    titulo VARCHAR(100) NOT NULL,
+    localidade VARCHAR(100) NOT NULL,
+    data_reuniao DATE NOT NULL,
+    horario TIME NOT NULL,
+    observacao VARCHAR(200) NOT NULL,
+    email VARCHAR(200) NOT NULL
+);
+
+
+select * from reuniao;
+
+
+https://www.youtube.com/watch?v=JsGTaIXpG9M

@@ -1,5 +1,10 @@
 var express = require('express');
 var app = express();  //  O express retorna um aplicativo
+
+app.listen(3000, () => {
+  console.log("escutando na porta 3000");
+});
+
 app.use(express.json())
 
 app.get('/pega-reunioes', function (req, res) {
@@ -25,7 +30,5 @@ app.post('/insere-reuniao', function (req, res) {
   res.send('hello world');
 });
 
-app.listen(3000, () => {
-  console.log("escutando na porta 3000");
-});
+
 
