@@ -13,12 +13,17 @@ function get_data() {
             let json = JSON.parse(xhttp.responseText);
             console.log(json);
 
+            const dataAtual = new Date()
+            console.log('A data de hoje é' + dataAtual);
+
             // para cada objeto, injeta ele no html
             json.forEach(element => {
                 // pega o valor que dentro do cara e soma com algo a mais
                 // i = i + 1
 
-                document.getElementById('historico').innerHTML += 
+                if (element.data > dataAtual){
+
+                    document.getElementById('agendamento').innerHTML += 
                     "<div class='card'>" +
                         "<h1>" + element.titulo  + "</h1>" +
                         "<span> localização: " + element.location  + "</span>" +
@@ -26,6 +31,25 @@ function get_data() {
                         "<br>" + 
                         "<span> email: " + element.email  + "</span>" + 
                     "</div>"
+                    
+                }
+
+                else {
+
+                    document.getElementById('historico').innerHTML += 
+                    "<div class='card'>" +
+                        "<h1>" + element.titulo  + "</h1>" +
+                        "<span> localização: " + element.location  + "</span>" +
+                        "<span> data: " + element.data  + "</span>" + 
+                        "<br>" + 
+                        "<span> email: " + element.email  + "</span>" + 
+                    "</div>"
+                }
+                
+
+                
+
+                
                 
             });
 
