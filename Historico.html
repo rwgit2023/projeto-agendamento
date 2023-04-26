@@ -20,7 +20,7 @@
 	  	/>
 		
 	</head>
-	<body>
+	<body onload="get_data()">
 
 		<header class="cabecalho">
 
@@ -43,32 +43,18 @@
 		<main class="container main">
             
             <ul class="histórico">
-                <li>   
+                <li id="agendamento">   
                     <h2>Agendadas</h2>
-					<p>Reunião 30/04/2023</p>
-					<p>Reunião 30/04/2023</p>
-					<p>Reunião 30/04/2023</p>
-					<p>Reunião 30/04/2023</p>
-					<p>Reunião 30/04/2023</p>
-					<p>Reunião 30/04/2023</p>
-					<p>Reunião 30/04/2023</p>
-					<p>Reunião 30/04/2023</p>
-					<p>Reunião 30/04/2023</p>
+					<p class="agendadas">
+						
+					</p>
 					
                         
                 </li>
                 
-                <li>
+                <li id="historico">
                     <h2>Histórico</h2>
-                        <p>Reunião 20/04/2023</p>
-						<p>Reunião 20/04/2023</p>
-						<p>Reunião 20/04/2023</p>
-						<p>Reunião 20/04/2023</p>
-						<p>Reunião 20/04/2023</p>
-						<p>Reunião 20/04/2023</p>
-						<p>Reunião 20/04/2023</p>
-						<p>Reunião 20/04/2023</p>
-						<p>Reunião 20/04/2023</p>
+					<!-- tem coisa sendo injetada aqui, via JS-->>
                 </li>
 
             </ul>
@@ -86,5 +72,6 @@
         </footer>
 	
 		<script src="./src/js/index.js"></script>
+		<script src="./src/js/service.js"></script>
 	</body>
 </html>

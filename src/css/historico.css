@@ -131,6 +131,11 @@ li h2 {
   margin-top: 10px;
 }
 
+.card{
+  border-radius: 5%;
+  background-color: blueviolet;
+}
+
 
 footer {
   text-align: center;
