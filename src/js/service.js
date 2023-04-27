@@ -13,15 +13,25 @@ function get_data() {
             let json = JSON.parse(xhttp.responseText);
             console.log(json);
 
-            const dataAtual = new Date()
-            console.log('A data de hoje é' + dataAtual);
+            // const data = new Date();
+
+            // const dia = data.getDate();
+            // const mes = data.getMonth() + 1; // adiciona 1 pois janeiro é representado pelo número 0
+            // const ano = data.getFullYear()
+            // const hora = data.getHours();
+
+            // console.log(data_artual = (dia + '/' + mes + '/' + ano))
+            const dataAtual = new Date();
+            console.log(dataAtual)
+            
+
 
             // para cada objeto, injeta ele no html
             json.forEach(element => {
                 // pega o valor que dentro do cara e soma com algo a mais
                 // i = i + 1
 
-                if (element.data > dataAtual){
+                if ((element.data) > dataAtual){
 
                     document.getElementById('agendamento').innerHTML += 
                     "<div class='card'>" +
