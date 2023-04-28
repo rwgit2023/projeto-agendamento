@@ -13,7 +13,7 @@ body {
   font-family: 'Poppins';
 }
 
-.cabecalho {
+.header {
   display: flex;
   justify-content: space-between;
   padding: 0px;
@@ -25,7 +25,7 @@ body {
 
 }
 
-.cabecalho .logo {
+.header .logo {
   width: 30%;
   height: 100%;
   object-fit: contain;
@@ -34,13 +34,13 @@ body {
 
 }
 
-.cabecalho .menu {
+.header .menu {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-.cabecalho nav li a {
+.header nav li a {
   font-weight: bold;
   /* color: #ffffff; */
   color: #343a40;
@@ -51,7 +51,7 @@ body {
   width: 0 10px;
 }
 
-.cabecalho nav li a:hover {
+.header nav li a:hover {
   background-color: #1C97C4;
   color: #ffffff;
 }
@@ -132,8 +132,9 @@ li h2 {
 }
 
 .card{
-  border-radius: 5%;
-  background-color: blueviolet;
+  margin: 2%;
+  border: solid 2px #D0D0CB;
+  
 }
 
 

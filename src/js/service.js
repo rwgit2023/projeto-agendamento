@@ -13,60 +13,49 @@ function get_data() {
             let json = JSON.parse(xhttp.responseText);
             console.log(json);
 
-            // const data = new Date();
+            var data = new Date();
 
-            // const dia = data.getDate();
-            // const mes = data.getMonth() + 1; // adiciona 1 pois janeiro é representado pelo número 0
-            // const ano = data.getFullYear()
-            // const hora = data.getHours();
-
-            // console.log(data_artual = (dia + '/' + mes + '/' + ano))
-            const dataAtual = new Date();
-            console.log(dataAtual)
+            var dia = data.getDate();
+            var mes = data.getMonth() + 1; // adiciona 1 pois janeiro é representado pelo número 0
+            var ano = data.getFullYear()
             
 
+            dia = dia < 10 ? "0" + dia : dia;
+            mes = mes < 10 ? "0" + mes : mes;
+
+            var dataAtual = ano + mes + dia;
+            console.log('A data de hoje é: ',dataAtual)
+
+        
 
             // para cada objeto, injeta ele no html
             json.forEach(element => {
-                // pega o valor que dentro do cara e soma com algo a mais
-                // i = i + 1
+                var data_digitada = (element.data).split("/").join("");
+                console.log('A data digitada é:',data_digitada)
 
-                if ((element.data) > dataAtual){
-
-                    document.getElementById('agendamento').innerHTML += 
-                    "<div class='card'>" +
-                        "<h1>" + element.titulo  + "</h1>" +
-                        "<span> localização: " + element.location  + "</span>" +
-                        "<span> data: " + element.data  + "</span>" + 
-                        "<br>" + 
-                        "<span> email: " + element.email  + "</span>" + 
-                    "</div>"
-                    
+                if (data_digitada < dataAtual) {
+                    document.getElementById('historico_reuniao').innerHTML +=
+                        "<div class='card'>" +
+                        "<h1>" + element.titulo + "</h1>" +
+                        "<span> localização: " + element.location + "</span>" +
+                        "<span> data: " + element.data + "</span>" +
+                        "<br>" +
+                        "<span> email: " + element.email + "</span>" +
+                        "</div>"
                 }
 
                 else {
-
-                    document.getElementById('historico').innerHTML += 
-                    "<div class='card'>" +
-                        "<h1>" + element.titulo  + "</h1>" +
-                        "<span> localização: " + element.location  + "</span>" +
-                        "<span> data: " + element.data  + "</span>" + 
-                        "<br>" + 
-                        "<span> email: " + element.email  + "</span>" + 
-                    "</div>"
+                    document.getElementById('agendamento_reuniao').innerHTML +=
+                        "<div class='card'>" +
+                        "<h1>" + element.titulo + "</h1>" +
+                        "<span> localização: " + element.location + "</span>" +
+                        "<span> data: " + element.data + "</span>" +
+                        "<br>" +
+                        "<span> email: " + element.email + "</span>" +
+                        "</div>"
                 }
-                
 
-                
-
-                
-                
             });
-
-            // document.getElementById('titulo').value = json[0].titulo;
-            // document.getElementById('local').value = json[0].location;
-            // document.getElementById('data').value = json[0].data;
-            
         }
     };
     xhttp.open("GET", "http://localhost:3000/pega-reunioes", true);

@@ -21,43 +21,25 @@ app.get('/pega-reunioes', function (req, res) {
     [
       {
         "titulo": "reuniao com a silvana",
-        "data": "23/02/2024",
+        "data": "1998/07/18",
+        "location": "FAI",
+        "hora": "19h",
+        "email": "tibursio@gmail.com"
+       },
+      {
+        "titulo": "reuniao com o Luciano",
+        "data": "2050/07/18",
         "location": "FAI",
         "hora": "19h",
         "email": "tibursio@gmail.com"
       },
       {
-        "titulo": "reuniao com a silvana",
-        "data": "18/12/1998",
+        "titulo": "reuniao com o Roberto",
+        "data": "2022/05/13",
         "location": "FAI",
         "hora": "19h",
         "email": "tibursio@gmail.com"
-      },
-      {
-        "titulo": "reuniao com a silvana",
-        "data": "2023/05/20",
-        "location": "FAI",
-        "hora": "19h",
-        "email": "tibursio@gmail.com"
-      }, {
-        "titulo": "reuniao com a silvana",
-        "data": "2023/02/15",
-        "location": "FAI",
-        "hora": "19h",
-        "email": "tibursio@gmail.com"
-      }, {
-        "titulo": "reuniao com a silvana",
-        "data": "2023/04/18",
-        "location": "FAI",
-        "hora": "19h",
-        "email": "tibursio@gmail.com"
-      }, {
-        "titulo": "reuniao com a silvana",
-        "data": "2023/05/30",
-        "location": "FAI",
-        "hora": "19h",
-        "email": "tibursio@gmail.com"
-      },
+      }
     ]
   );
 });
