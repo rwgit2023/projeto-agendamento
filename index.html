@@ -31,7 +31,7 @@
 	  <script>
 		new window.VLibras.Widget('https://vlibras.gov.br/app');
 	  </script>
-	  
+
 	<header class="cabecalho">
 
 		<a>
@@ -81,29 +81,29 @@
 
 		<div class="right">
 
-			<form>
+			<form id="formulario">
 				<label for="titulo">Título reunião</label>
-				<input type="text" id="titulo" class="input-padrao" required placeholder="Adicionar um assunto">
+				<input type="text" name = 'titulo' id="titulo" class="input-padrao" required placeholder="Adicionar um assunto">
 
 				<label for="local">Local</label>
-				<input type="text" id="local" class="input-padrao" required placeholder="Local">
+				<input type="text" name = 'local' id="local" class="input-padrao" required placeholder="Local">
 
 				<label for="data">Data</label>
-				<input type="text" id="data" class="input-padrao" placeholder="AAAA/MM/DD">
+				<input type="text" name = 'data' id="data" class="input-padrao" placeholder="AAAA/MM/DD">
 
 				<label for="data">Hora</label>
-				<input type="text" id="data" class="input-padrao" placeholder="00:00:00">
+				<input type="text" name = 'hora' id="hora" class="input-padrao" placeholder="00:00:00">
 
 				<label for="livre">Observações</label>
-				<textarea id="Mensagem" cols=" " rows="4" class="input-padrao" required
+				<textarea id="observacao" name = 'observacao' cols=" " rows="4" class="input-padrao" required
 					placeholder="Observações"></textarea>
 
 				<label for="email">Email dos envolvidos</label>
-				<input type="text" id="email" class="input-padrao" required placeholder="envolvido1@; envolvido2@">
+				<input type="text" name = 'email' id="email" class="input-padrao" required placeholder="envolvido1@; envolvido2@">
 
 
 
-				<button class="enviar" type="submit" >Agendar</button>
+				<button class="enviar" type="submit" onclick="insere_reuniao()" >Agendar</button>
 			</form>
 
 

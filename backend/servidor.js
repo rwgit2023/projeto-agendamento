@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();  //  O express retorna um aplicativo
 
+app.use(express.json())
+
 app.use(function (req, res, next) {
   //res.header("Access-Control-Allow-Origin", "https://barbeariadomatheus.vercel.app"); // update to match the 
 
@@ -14,39 +16,33 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use(express.json())
+
+var reunioes = [];
 
 app.get('/pega-reunioes', function (req, res) {
   res.send(
-    [
-      {
-        "titulo": "reuniao com a silvana",
-        "data": "1998/07/18",
-        "location": "FAI",
-        "hora": "19h",
-        "email": "tibursio@gmail.com"
-       },
-      {
-        "titulo": "reuniao com o Luciano",
-        "data": "2050/07/18",
-        "location": "FAI",
-        "hora": "19h",
-        "email": "tibursio@gmail.com"
-      },
-      {
-        "titulo": "reuniao com o Roberto",
-        "data": "2022/05/13",
-        "location": "FAI",
-        "hora": "19h",
-        "email": "tibursio@gmail.com"
-      }
-    ]
+    reunioes   /// Ta sendo recebido aqui e ja enviando para o histórico
   );
 });
 
 app.post('/insere-reuniao', function (req, res) {
-  res.send('hello world');
+  
+  // api pega o corpo da request e converte para JSON
+  let reuniao = JSON.stringify(req.body)
+
+  // reuniao é um JSON > um objeto
+
+  reunioes.push(reuniao);    ///    To pegando oque vem do from (via o service.js) e inserindo em uma lista
+  console.log(reunioes)
+
+  // envia um status e algo de resposta
+  
+  res.status(201).send("Chetelba")       /// retornando a reposta que deu certo (created -- 201)
 });
+
+
+
+
 
 app.listen(3000, () => {
   console.log("escutando na porta 3000");
