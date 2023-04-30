@@ -116,7 +116,7 @@ function insere_reuniao(reuniao) {
 
         if (this.readyState == 4 && this.status == 201) {
 
-            
+            window.location.href = './Historico.html'; // muda de página
 
         }
 

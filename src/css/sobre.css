@@ -70,7 +70,37 @@ body {
 
 
 /* ------------------------------------------------------------- */
+.container_main{
+  width: 400px;
+  height: 300px;
+  margin: 5% auto;
+  /* padding: 50px 0; */
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 10px;
+  opacity: 1;
+  transition: 400ms;
+  box-shadow: 15px 15px 7px 7px black
+  
+}
 
+.container_main h1{
+  padding: 10px 0 20px 0 ;
+  font-size: 25px;
+  
+}
+
+.container_main p{
+  margin: 0 0.5em 0.5em 0.5em;
+  font-size: 15px;
+  text-align: left;
+  
+ 
+  
+}
+
+/* ------------------------------------------------------------- */
 footer {
   text-align: center;
   /* background: url(../midia/image/bg.jpg); */
