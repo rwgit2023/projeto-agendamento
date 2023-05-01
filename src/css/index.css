@@ -78,14 +78,24 @@ body {
   align-items: center;
 }
 
+form{
+  width: 100%;
+}
+
+input[type="text"],
+input[type="textarea"]{
+  width: 100%;
+}
+
 .right {
-  padding: 1%;
+  border: px solid red;
+  padding: 2% 4% 0% 4%;
   width: 50%;
   height: 100%;
   position: relative;
   text-align: center;
-
-
+  display: flex;
+  align-items: center;
 }
 
 /* ------------------------------------------------------------- */
@@ -201,10 +211,10 @@ fieldset {
 
 
 
-.container .enviar {
-  margin: 10px 0 0 -500px;
-  width: 20%;
-  padding: 15px 0;
+.container .enviar {  
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 2%;
   background-color: #1C97C4;
   color: #48484f;
   font-weight: bold;
