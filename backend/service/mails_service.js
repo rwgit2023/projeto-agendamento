@@ -26,7 +26,7 @@ async function main(meet) {
     // send mail with defined transport object
     let info = await transporter.sendMail({
         from: 'ronan-com@hotmail.com', // sender address
-        to: reuniao, // list of receivers
+        to: reuniao.email, // list of receivers
         subject: reuniao.titulo, // Subject line
         text: reuniao.titulo + "\n" + "Data: " + reuniao.data + "\n" + "Hora: " + reuniao.hora
             + "\n" + "Local: " + reuniao.local,  // plain text body

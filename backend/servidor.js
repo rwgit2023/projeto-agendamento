@@ -37,10 +37,11 @@ app.post('/insere-reuniao', function (req, res) {
   // reuniao é um JSON > um objeto
 
   reunioes.push(reuniao);    ///    To pegando oque vem do from (via o service.js) e inserindo em uma lista
-  console.log(reunioes);
+  
+  console.log(reuniao);
 
   if(reuniao != "{}")
-    service.main(JSON.stringify(reuniao));
+    service.main(reuniao);
 
   // envia um status e algo de resposta
   res.status(201).send("Chetelba")       /// retornando a reposta que deu certo (created -- 201)

@@ -80,6 +80,8 @@ function get_data() {
 document.getElementById("formulario").addEventListener("submit", function (e) {
     e.preventDefault();
 
+    console.log("front meet:   " + e.target);
+    
     let nova_reuniao = handleFormData(e.target);
     insere_reuniao(nova_reuniao)
 });
