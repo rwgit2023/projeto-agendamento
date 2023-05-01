@@ -18,9 +18,7 @@ body {
   justify-content: space-between;
   padding: 0px;
   max-width: 1440px;
-  /* max-height: 100px; */
   margin: 0 auto;
-  /* background: rgb(83, 79, 79); */
   background: #D0D0CB;
 
 }
@@ -42,7 +40,6 @@ body {
 
 .cabecalho nav li a {
   font-weight: bold;
-  /* color: #ffffff; */
   color: #343a40;
   font-size: 20px;
   padding: 5px 20px;
@@ -74,7 +71,6 @@ body {
   width: 400px;
   height: 300px;
   margin: 5% auto;
-  /* padding: 50px 0; */
   text-align: center;
   box-sizing: border-box;
   border: 1px solid black;
@@ -103,7 +99,6 @@ body {
 /* ------------------------------------------------------------- */
 footer {
   text-align: center;
-  /* background: url(../midia/image/bg.jpg); */
   position: absolute;
   bottom: 0;
   width: 100%;
