@@ -40,19 +40,39 @@
 	npm install
 ```
 
+3. Dentro do arquivo (mails_service.js)
 
-3. Em seguida execute o projeto
+```
+	* - Alterar pelo e-mail que será utilizado para 	   realizar o serviço de envio  (OUTLOOK)
+	
+		user: 'teste@hotmail.com'
+	
+	* - Alterar a senha do devido e-mail
+	
+		pass: 'senha do e-mail'
+	
+	* - Email de saída
+	
+		from: 'teste@hotmail.com'
+	
+	
+```
+
+
+4. Em seguida execute o projeto
 
 ```
 	node servidor.js
 ```
 
 
-4. Após o servidor estando em execução
+5. Após o servidor estando em execução
 
 ```
 	Executar o arquivo index.html e fazer as requisições
 ```
+
+
 
 > Lembre-se que, para executar os comandos de  **npm install** e **node servidor.js** você deve estar no diretório (pasta) do seu projeto
 

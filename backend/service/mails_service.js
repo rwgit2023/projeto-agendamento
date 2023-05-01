@@ -29,7 +29,7 @@ async function main(meet) {
         to: reuniao.email, // list of receivers
         subject: reuniao.titulo, // Subject line
         text: reuniao.titulo + "\n" + "Data: " + reuniao.data + "\n" + "Hora: " + reuniao.hora
-            + "\n" + "Local: " + reuniao.local,  // plain text body
+            + "\n" + "Local: " + reuniao.local + "\n" + "Observacao: " + reuniao.observacao,  // plain text body
     }); 
 
     console.log("Message sent: %s", info.messageId);
