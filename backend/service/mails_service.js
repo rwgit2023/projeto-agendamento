@@ -18,14 +18,14 @@ async function main(meet) {
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'ronan-com@hotmail.com', // generated ethereal user
-            pass: 'ronan123', // generated ethereal password
+            user: 'reunioes.ronan@outlook.com', // generated ethereal user
+            pass: 'K12k112023', // generated ethereal password
         },
     });
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-        from: 'ronan-com@hotmail.com', // sender address
+        from: 'reunioes.ronan@outlook.com', // sender address
         to: reuniao.email, // list of receivers
         subject: reuniao.titulo, // Subject line
         text: reuniao.titulo + "\n" + "Data: " + reuniao.data + "\n" + "Hora: " + reuniao.hora
